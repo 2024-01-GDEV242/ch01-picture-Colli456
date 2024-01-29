@@ -224,9 +224,29 @@ public class Picture
     public void setBlackAndWhite()
     {
         bottom.changeColor("black");
+        bottom1.changeColor("black");
+        bottom2.changeColor("black");
+        bottom3.changeColor("black");
+        bottomA.changeColor("black");
+        bottomB.changeColor("black");
+        sky.changeColor("white");
         road.changeColor("white");
         top.changeColor("black");
+        top1.changeColor("black");
         moon.changeColor("black");
+        ground.changeColor("black");
+        star.changeColor("black");
+        star1.changeColor("black");
+        star2.changeColor("black");
+        star3.changeColor("black");
+        star4.changeColor("black");
+        star5.changeColor("black");
+        star6.changeColor("black");
+        star7.changeColor("black");
+        star8.changeColor("black");
+        star9.changeColor("black");
+        boy.changeColor("black");
+        girl.changeColor("black");
     }
 
     /**
@@ -234,10 +254,47 @@ public class Picture
      */
     public void setColor()
     {
-        bottom.changeColor("green");
-        bottom1.changeColor("green");
-        road.changeColor("black");
+        bottom.changeColor("brown");
+        bottom1.changeColor("brown");
+        bottom2.changeColor("brown");
+        bottom3.changeColor("brown");
+        bottomA.changeColor("brown");
+        bottomB.changeColor("brown");
+        road.changeColor("gray");
         top.changeColor("green");
+        top1.changeColor("green");
         moon.changeColor("yellow");
+        sky.changeColor("black");
+        ground.changeColor("green");
+        star.changeColor("yellow");
+        star1.changeColor("yellow");
+        star2.changeColor("yellow");
+        star3.changeColor("yellow");
+        star4.changeColor("yellow");
+        star5.changeColor("yellow");
+        star6.changeColor("yellow");
+        star7.changeColor("yellow");
+        star8.changeColor("yellow");
+        star9.changeColor("yellow");
+        boy.changeColor("blue");
+        girl.changeColor("magenta");
+    }
+    
+    /**
+     * Add a moving circle method
+     */
+    public void sunset()
+    {
+        moon.slowMoveVertical(290);
+        boy.slowMoveVertical(-40);
+    }
+    
+    /**
+     * Add a moving person method
+     */
+    public void walk()
+    {
+        boy.slowMoveVertical(140);
+        girl.slowMoveVertical(140);
     }
 }
