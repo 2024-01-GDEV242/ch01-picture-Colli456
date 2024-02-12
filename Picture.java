@@ -1,20 +1,38 @@
 /**
- * This class represents a simple picture. You can draw the picture using
- * the draw method. But wait, there's more: being an electronic picture, it
- * can be changed. You can set it to black-and-white display and back to
- * colors (only after it's been drawn, of course).
+ * Creating a picture using a number of squares, triangles, circles 
+ * and persons.
  *
  * This class was written as an early example for teaching Java with BlueJ.
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * @author  Collie Clarke
+ * @version 2024.01.22
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+    private Square road;
+    private Square bottom;
+    private Square bottomA;
+    private Square bottomB;
+    private Square bottom1;
+    private Square bottom2;
+    private Square bottom3;
+    private Square sky;
+    private Square ground;
+    private Triangle top;
+    private Triangle top1;
+    private Circle moon;
+    private Circle star;
+    private Circle star1;
+    private Circle star2;
+    private Circle star3;
+    private Circle star4;
+    private Circle star5;
+    private Circle star6;
+    private Circle star7;
+    private Circle star8;
+    private Circle star9;
+    private Person boy;
+    private Person girl;
     private boolean drawn;
 
     /**
@@ -22,10 +40,30 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
+        star = new Circle();
+        star1 = new Circle();
+        star2 = new Circle();
+        star3 = new Circle();
+        star4 = new Circle();
+        star5 = new Circle();
+        star6 = new Circle();
+        star7 = new Circle();
+        star8 = new Circle();
+        star9 = new Circle();
+        bottom = new Square();
+        bottomA = new Square();
+        bottomB = new Square();
+        bottom1 = new Square();
+        bottom2 = new Square();
+        bottom3 = new Square();
+        road = new Square();
+        sky = new Square();
+        ground = new Square();
+        top = new Triangle();  
+        top1 = new Triangle();
+        moon = new Circle();
+        boy = new Person();
+        girl = new Person();
         drawn = false;
     }
 
@@ -35,27 +73,147 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+            sky.changeColor("black");
+            sky.moveHorizontal(-310);
+            sky.moveVertical(-120);
+            sky.changeSize(1000);
+            sky.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
+            ground.changeColor("green");
+            ground.moveHorizontal(-310);
+            ground.moveVertical(99);
+            ground.changeSize(1000);
+            ground.makeVisible();
+            
+            bottom.changeColor("brown");
+            bottom.moveHorizontal(-257);
+            bottom.moveVertical(40);
+            bottom.changeSize(35);
+            bottom.makeVisible();
+            
+            bottomA.changeColor("brown");
+            bottomA.moveHorizontal(-257);
+            bottomA.moveVertical(65);
+            bottomA.changeSize(35);
+            bottomA.makeVisible();
+            
+            bottomB.changeColor("brown");
+            bottomB.moveHorizontal(-257);
+            bottomB.moveVertical(10);
+            bottomB.changeSize(35);
+            bottomB.makeVisible();
+            
+            bottom1.changeColor("brown");
+            bottom1.moveHorizontal(93);
+            bottom1.moveVertical(40);
+            bottom1.changeSize(35);
+            bottom1.makeVisible();
+            
+            bottom2.changeColor("brown");
+            bottom2.moveHorizontal(93);
+            bottom2.moveVertical(65);
+            bottom2.changeSize(35);
+            bottom2.makeVisible();
+            
+            bottom3.changeColor("brown");
+            bottom3.moveHorizontal(93);
+            bottom3.moveVertical(10);
+            bottom3.changeSize(35);
+            bottom3.makeVisible();
+            
+            road.changeColor("gray");
+            road.moveHorizontal(-100);
+            road.moveVertical(99);
+            road.changeSize(80);
+            road.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            top.changeSize(60, 100);
+            top.moveHorizontal(-140);
+            top.moveVertical(-60);
+            top.makeVisible();
+            
+            top1.changeSize(60, 100);
+            top1.moveHorizontal(210);
+            top1.moveVertical(-60);
+            top1.makeVisible();
     
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            moon.changeColor("yellow");
+            moon.moveHorizontal(180);
+            moon.moveVertical(-75);
+            moon.changeSize(70);
+            moon.makeVisible();
+            
+            star.changeColor("yellow");
+            star.moveHorizontal(-120);
+            star.moveVertical(-80);
+            star.changeSize(7);
+            star.makeVisible();
+            
+            star1.changeColor("yellow");
+            star1.moveHorizontal(-80);
+            star1.moveVertical(-50);
+            star1.changeSize(7);
+            star1.makeVisible();
+            
+            star2.changeColor("yellow");
+            star2.moveHorizontal(140);
+            star2.moveVertical(-65);
+            star2.changeSize(7);
+            star2.makeVisible();
+            
+            star3.changeColor("yellow");
+            star3.moveHorizontal(90);
+            star3.moveVertical(-70);
+            star3.changeSize(7);
+            star3.makeVisible();
+            
+            star4.changeColor("yellow");
+            star4.moveHorizontal(-160);
+            star4.moveVertical(-75);
+            star4.changeSize(7);
+            star4.makeVisible();
+            
+            star5.changeColor("yellow");
+            star5.moveHorizontal(60);
+            star5.moveVertical(-55);
+            star5.changeSize(7);
+            star5.makeVisible();
+            
+            star6.changeColor("yellow");
+            star6.moveHorizontal(-20);
+            star6.moveVertical(-77);
+            star6.changeSize(7);
+            star6.makeVisible();
+            
+            star7.changeColor("yellow");
+            star7.moveHorizontal(5);
+            star7.moveVertical(-35);
+            star7.changeSize(7);
+            star7.makeVisible();
+            
+            star8.changeColor("yellow");
+            star8.moveHorizontal(105);
+            star8.moveVertical(-27);
+            star8.changeSize(7);
+            star8.makeVisible();
+            
+            star9.changeColor("yellow");
+            star9.moveHorizontal(-135);
+            star9.moveVertical(-25);
+            star9.changeSize(7);
+            star9.makeVisible();
+            
+            girl.changeColor("magenta");
+            girl.moveHorizontal(-40);
+            girl.moveVertical(01);
+            girl.changeSize(40,25);
+            girl.makeVisible();
+            
+            boy.changeColor("blue");
+            boy.moveHorizontal(-19);
+            boy.moveVertical(01);
+            boy.changeSize(40,25);
+            boy.makeVisible();
             drawn = true;
         }
     }
@@ -65,10 +223,30 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        bottom.changeColor("black");
+        bottom1.changeColor("black");
+        bottom2.changeColor("black");
+        bottom3.changeColor("black");
+        bottomA.changeColor("black");
+        bottomB.changeColor("black");
+        sky.changeColor("white");
+        road.changeColor("white");
+        top.changeColor("black");
+        top1.changeColor("black");
+        moon.changeColor("black");
+        ground.changeColor("black");
+        star.changeColor("black");
+        star1.changeColor("black");
+        star2.changeColor("black");
+        star3.changeColor("black");
+        star4.changeColor("black");
+        star5.changeColor("black");
+        star6.changeColor("black");
+        star7.changeColor("black");
+        star8.changeColor("black");
+        star9.changeColor("black");
+        boy.changeColor("black");
+        girl.changeColor("black");
     }
 
     /**
@@ -76,9 +254,47 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        bottom.changeColor("brown");
+        bottom1.changeColor("brown");
+        bottom2.changeColor("brown");
+        bottom3.changeColor("brown");
+        bottomA.changeColor("brown");
+        bottomB.changeColor("brown");
+        road.changeColor("gray");
+        top.changeColor("green");
+        top1.changeColor("green");
+        moon.changeColor("yellow");
+        sky.changeColor("black");
+        ground.changeColor("green");
+        star.changeColor("yellow");
+        star1.changeColor("yellow");
+        star2.changeColor("yellow");
+        star3.changeColor("yellow");
+        star4.changeColor("yellow");
+        star5.changeColor("yellow");
+        star6.changeColor("yellow");
+        star7.changeColor("yellow");
+        star8.changeColor("yellow");
+        star9.changeColor("yellow");
+        boy.changeColor("blue");
+        girl.changeColor("magenta");
+    }
+    
+    /**
+     * Add a moving circle method
+     */
+    public void sunset()
+    {
+        moon.slowMoveVertical(290);
+        boy.slowMoveVertical(-40);
+    }
+    
+    /**
+     * Add a moving person method
+     */
+    public void walk()
+    {
+        boy.slowMoveVertical(140);
+        girl.slowMoveVertical(140);
     }
 }
